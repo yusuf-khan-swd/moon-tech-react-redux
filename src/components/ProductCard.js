@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
     <div className="relative shadow-lg rounded-3xl border  p-3 flex flex-col text-indigo-900">
       {pathname.includes("cart") && (
         <div className="bg-indigo-500 text-white h-8 w-8 grid place-content-center rounded-full absolute top-2 right-2">
-          {product.quantity}
+          <p>{product.quantity}</p>
         </div>
       )}
       <div className="h-52 w-52 mx-auto">
