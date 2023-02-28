@@ -11,13 +11,9 @@ import {
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
   const { pathname } = useLocation();
-  console.log(pathname);
 
   return (
-    <div
-      className="shadow-lg rounded-3xl border  p-3 flex flex-col text-indigo-900"
-      key={product._id}
-    >
+    <div className="shadow-lg rounded-3xl border  p-3 flex flex-col text-indigo-900">
       <div className="h-52 w-52 mx-auto">
         <img src={product.image} alt={product.model} />
       </div>
