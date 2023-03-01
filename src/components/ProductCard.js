@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 import {
   addToCart,
   removeFromCart,
-} from "../redux/actionCreators/actionCreators";
+} from "../redux/actionCreators/productActions";
 
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
